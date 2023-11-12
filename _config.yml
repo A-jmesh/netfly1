@@ -14,12 +14,12 @@ timezone: Asia/Kolkata
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: AI-Takia # the main title
+title: 'AI-Takia' # the main title
 
-tagline: Latest Blogs on AI tech, Tools & SaaS # it will display as the sub-title
+tagline: 'Latest Blogs on AI tech, Tools & SaaS' # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Begginer friendly AI technologies simplified & explained. Know & boost productivity with latest AI tools.
+  'Begginer friendly AI technologies simplified & explained. Know & boost productivity with latest AI tools.'
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -50,7 +50,7 @@ google_site_verification: # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: G-LWG69HFERM
 
 # Prefer color scheme setting.
 #
