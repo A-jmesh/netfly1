@@ -2,4 +2,4 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: https://ajaysi.github.io/sitemap.xml
+Sitemap: https://ai-takia.netlify.app/sitemap.xml
