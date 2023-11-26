@@ -1,296 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://ai-takia.netlify.app/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>http://localhost:4000/posts/The-Impact-of-Artificial-Intelligence-on-Microsofts-News-Website/</loc>
+<lastmod>2023-11-08T14:59:37+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/Introducing-GPT-4-Turbo-The-Future-of-AI-Assistants/</loc>
+<lastmod>2023-11-08T22:44:29+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/Exciting-AI-Advancements-Musks-Chatbot-to-Apples-M3-Chips/</loc>
+<lastmod>2023-11-08T23:44:30+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/archives/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/State-of-AI-Report-2022-Unveiling-Innovations-and-Future-Trends-in-Artificial-Intelligence/</loc>
+<lastmod>2023-11-09T07:32:15+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/about/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/Grok-Elon-Musks-Revolutionary-AI-Chatbot-Redefining-the-Industry/</loc>
+<lastmod>2023-11-09T07:57:21+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/unleashing-the-potential-of-custom-gpts-learn-how-to-build-and-monetize-ai-solutions/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/How-to-Use-Stable-Diffusion-in-Google-Colab-for-Free-A-Step-by-Step-Guide/</loc>
+<lastmod>2023-11-09T08:51:09+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/unleashing-the-power-of-openai-assistants-a-comprehensive-guide/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/The-Top-5-AI-Animation-Software-Tools-Choose-the-Perfect-Tool-for-Your-Animation-Needs/</loc>
+<lastmod>2023-11-09T09:13:28+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/unleashing-the-power-of-openais-gpt-4-turbo-revolutionizing-ai-and-chatbots/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/PlayStation-5-Sales-Soar-Sony-Under-Pressure-Spider-Man-2-Comparison-Silent-Hill-Ascension-Streaming/</loc>
+<lastmod>2023-11-11T11:17:45+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/how-to-create-a-custom-chat-gpt-assistant-for-math-problem-solving/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/How-to-Create-a-Custom-Chat-GPT-Assistant-for-Math-Problem-Solving/</loc>
+<lastmod>2023-11-11T19:45:29+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/playstation-5-sales-soar-sony-under-pressure-spider-man-2-comparison-silent-hill-ascension-streaming/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/Unleashing-the-Power-of-OpenAIs-GPT-4-Turbo-Revolutionizing-AI-and-Chatbots/</loc>
+<lastmod>2023-11-11T20:03:10+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/the-top-5-ai-animation-software-tools-choose-the-perfect-tool-for-your-animation-needs/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/Unleashing-the-Power-of-OpenAI-Assistants-A-Comprehensive-Guide/</loc>
+<lastmod>2023-11-11T20:24:01+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/how-to-use-stable-diffusion-in-google-colab-for-free-a-step-by-step-guide/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/Unleashing-the-Potential-of-Custom-GPTs-Learn-How-to-Build-and-Monetize-AI-Solutions/</loc>
+<lastmod>2023-11-11T20:51:43+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/grok-elon-musks-revolutionary-ai-chatbot-redefining-the-industry/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/posts/Revolutionary-Military-Technologies-The-Top-10-Innovations-of-2023/</loc>
+<lastmod>2023-11-16T20:16:40+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/state-of-ai-report-2022-unveiling-innovations-and-future-trends-in-artificial-intelligence/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/categories/</loc>
+<lastmod>2023-11-16T20:17:13+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/exciting-ai-advancements-musks-chatbot-to-apples-m3-chips/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/tags/</loc>
+<lastmod>2023-11-16T20:17:13+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/page2/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/archives/</loc>
+<lastmod>2023-11-16T20:17:13+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/ai/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/about/</loc>
+<lastmod>2023-11-16T20:17:13+05:30</lastmod>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/ai-acquisition/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/ai-advancements/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/tags/ai/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/ai-animation-software/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/tags/microsoft-news-website/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/ai-chatbots/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/tags/gpt-4-turbo/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/ai-future-potential/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/tags/future-of-ai-assistants/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/ai-innovation/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/tags/ai-advancements/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/ai-latest/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/tags/chatbots-news/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/animation-tools/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/tags/ai-latest/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/chat-gpt-assistant/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://localhost:4000/tags/ai-future-potential/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/ai-advancements/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/ai-chatbots/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/tech-news/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/elon-musk-s-grok/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/ai-technology/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/google-colab/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/future-technology/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/stable-diffusion/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/openai/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/ai-animation-software/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/animation/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/animation-tools/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/technology/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/ps-5/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/gpt-technology/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/ai-acquisition/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/artificial-intelligence-tools/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/math-problem-solving/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/gpts/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/chat-gpt-assistant/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/ai-tech/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/chatbots/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/sony-playstation-5/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/openai-dev-day-conference/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/silent-hill/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/openai-assistants/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/artificial-intelligence/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/custom-gpts/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/education/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/ai-innovation/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/media-and-entertainment/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/military-technology/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/chatbots/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/tags/future-warfare/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/chatbots-news/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/technology/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/custom-gpts/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/media-and-entertainment/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/elon-musk-s-grok/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/ai-technology/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/future-of-ai-assistants/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/future-technology/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/google-colab/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/ai-advancements/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/gpt-4-turbo/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/tech-news/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/math-problem-solving/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/artificial-intelligence/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/microsoft-news-website/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/chatbots/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/openai-assistants/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/animation/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/openai-dev-day-conference/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/sony-playstation-5/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/ps-5/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/silent-hill/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/tags/stable-diffusion/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/education/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/introducing-gpt-4-turbo-the-future-of-ai-assistants/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/gpt-technology/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/posts/the-impact-of-artificial-intelligence-on-microsofts-news-website/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/artificial-intelligence-tools/</loc>
 </url>
 <url>
-  <loc>https://ai-takia.netlify.app/categories/chatbots/</loc>
-  <lastmod>2023-11-16T02:41:29+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>http://localhost:4000/categories/openai/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/categories/gpts/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/categories/ai-tech/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/categories/technology/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/categories/military/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page2/</loc>
 </url>
 </urlset>
