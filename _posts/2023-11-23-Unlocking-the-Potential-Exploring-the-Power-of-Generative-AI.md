@@ -6,7 +6,7 @@ tags: [Generative AI, SEO strategies]
 description: Explore its Basics, Practical Applications in SEO, and Tips for Implementation. Revolutionize your digital presence now!
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-23-16-37-20.png
+    path: generated_image_2023-11-23-16-37-20.webp
     alt: Unlocking the Potential Exploring the Power of Generative AI
 ---
 

@@ -6,7 +6,7 @@ tags: [custom GPTs, AI innovation]
 description: Discover the potential of custom GPTs and learn how to create and use them. Explore benefits, market opportunities, and monetization strategies.
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-11-20-50-00.png
+    path: generated_image_2023-11-11-20-50-00.webp
     alt: Unleashing the Potential of Custom GPTs Learn How to Build and Monetize AI Solutions
 ---
 

@@ -6,7 +6,7 @@ tags: [AI, Chatbots]
 description: Discover the future of AI and chatbots with OpenAI's GPT-4 Turbo. Revolutionize interactions with extended context length, improved instruction-following, and enhanced natural language processing. Explore its capabilities and create personalized chatbots for endless possibilities. Embrace the power of GPT-4 Turbo and unleash your creativity today.
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-11-20-00-52.png
+    path: generated_image_2023-11-11-20-00-52.webp
     alt: Unleashing the Power of OpenAI's GPT-4 Turbo Revolutionizing AI and Chatbots
 ---
 

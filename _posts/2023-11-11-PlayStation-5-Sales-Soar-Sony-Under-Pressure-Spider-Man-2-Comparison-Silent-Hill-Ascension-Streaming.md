@@ -6,7 +6,7 @@ tags: [PS 5, AI acquisition]
 description: Discover the surprising sales performance of PlayStation 5, Sony's pressure for a major acquisition, Spider-Man 2's visual modes, and Silent Hill Ascension streaming on PlayStation. Dive in and stay informed!
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-11-11-15-58.png
+    path: generated_image_2023-11-11-11-15-58.webp
     alt: PlayStation 5 Sales Soar, Sony Under Pressure, Spider-Man 2 Comparison, Silent Hill Ascension Streaming
 ---
 

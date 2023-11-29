@@ -6,7 +6,7 @@ tags: [AI, Microsoft News Website]
 description: Discover the impact of artificial intelligence on Microsoft's news website. Explore concerns about false information and biased content, and the need for human oversight in news curation.
 img_path: '/assets/'
 image:
-  path: generated_image_2023-11-08-21-43-44.png
+  path: generated_image_2023-11-08-21-43-44.webp
   alt: Imapct of AI on news, microsoft casestudy.
 ---
 

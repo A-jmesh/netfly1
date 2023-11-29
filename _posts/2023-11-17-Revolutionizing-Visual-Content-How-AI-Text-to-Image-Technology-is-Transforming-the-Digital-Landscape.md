@@ -6,7 +6,7 @@ tags: [enhanced creativity and visualization, time and cost efficiency]
 description: Discover the Benefits of AI Text to Image Technology. Enhance creativity, save time and costs, customize visuals, promote inclusivity, and embrace automation. Witness the future now!
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-17-22-27-05.png
+    path: generated_image_2023-11-17-22-27-05.webp
     alt: Revolutionizing Visual Content How AI Text to Image Technology is Transforming the Digital Landscape
 ---
 

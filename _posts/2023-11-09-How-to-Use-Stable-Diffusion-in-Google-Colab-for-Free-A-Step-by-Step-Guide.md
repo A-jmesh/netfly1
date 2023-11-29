@@ -6,7 +6,7 @@ tags: [Google Colab, Stable Diffusion]
 description: Discover how to use Stable Diffusion in Google Colab without a high-end GPU or CPU. Follow this step-by-step guide to unleash the power of Stable Diffusion and create stunning, high-quality images. Don't miss out on this opportunity!
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-09-08-49-22.png
+    path: generated_image_2023-11-09-08-49-22.webp
     alt: How to Use Stable Diffusion in Google Colab for Free A Step-by-Step Guide
 ---
 

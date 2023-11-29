@@ -6,7 +6,7 @@ tags: [AI chatbots, Elon Musk's Grok]
 description: Discover the groundbreaking features of Elon Musk's AI creation, Grok. Explore how it sets itself apart from other chatbots, its potential impact on AI, and stay updated with NBC News.
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-09-07-55-51.png
+    path: generated_image_2023-11-09-07-55-51.webp
     alt: Grok Elon Musk's Revolutionary AI Chatbot Redefining the Industry
 ---
 
@@ -48,7 +48,7 @@ Elon Musk's latest AI creation, Grok, is poised to revolutionize the industry wi
 
 To stay informed about the latest advancements in AI and other tech news, be sure to download the NBC News app or follow us on social media. Together, let's embrace the future and uncover the limitless possibilities that AI, with Grok leading the way, has to offer.
 
-![img-description](generated_image_2023-11-09-07-56-18.png)_Image Caption_
+![img-description](generated_image_2023-11-09-07-56-18.webp)_Image Caption_
 
 Title: Elon Musk's Grok: The Revolutionary AI Chatbot Revolutionizing the Industry
 

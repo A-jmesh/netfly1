@@ -6,7 +6,7 @@ tags: [AI latest, AI Future potential]
 description: Dive into the comprehensive State of AI Report 2022, uncovering groundbreaking developments in artificial intelligence. Discover real-time thought, image decoding, and more, while exploring the future potential of AI.
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-09-07-30-40.png
+    path: generated_image_2023-11-09-07-30-40.webp
     alt: "State of AI Report 2022 Unveiling Innovations and Future Trends in Artificial Intelligence"
 ---
 

@@ -6,7 +6,7 @@ tags: [military technology, future warfare]
 description: Explore the groundbreaking military technologies that are set to reshape the battlefield in 2023. From next-generation body armor to 6th generation fighter jets, these innovations will redefine global security and defense strategies. Discover the capabilities and potential of each technology as we delve into their significance in modern warfare.
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-16-20-15-02.png
+    path: generated_image_2023-11-16-20-15-02.webp
     alt: Revolutionary Military Technologies The Top 10 Innovations of 2023
 ---
 

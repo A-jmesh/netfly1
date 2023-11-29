@@ -6,7 +6,7 @@ tags: [OpenAI Dev Day Conference, OpenAI Assistants]
 description: Discover the power of OpenAI Assistants at the Dev Day conference. Explore how assistants work, build your own customized assistant, and enhance your AI projects. Read more!
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-11-20-22-26.png
+    path: generated_image_2023-11-11-20-22-26.webp
     alt: Unleashing the Power of OpenAI Assistants A Comprehensive Guide
 ---
 

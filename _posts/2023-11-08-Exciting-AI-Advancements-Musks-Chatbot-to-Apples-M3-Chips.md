@@ -6,7 +6,7 @@ tags: [AI Advancements, chatbots news]
 description: Discover the latest AI advancements, from Elon Musk's chatbot to Apple's M3 chips. Dive into the impact of AI on various industries and explore its transformative potential.
 img_path: '/assets/'
 image:
-  path: generated_image_2023-11-08-23-42-51.png
+  path: generated_image_2023-11-08-23-42-51.webp
   alt: Exciting AI Advancements Musk's Chatbot to Apple's M3 Chips
 ---
 
