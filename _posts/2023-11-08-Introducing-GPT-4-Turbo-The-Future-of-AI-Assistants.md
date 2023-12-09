@@ -6,7 +6,7 @@ tags: [GPT-4 Turbo, Future of AI Assistants]
 description: Discover the Future of AI Assistants with OpenAI Dev Day! Introducing GPT-4 Turbo and its powerful capabilities, including extended context length, enhanced control, up-to-date world knowledge, new modalities, customization, and more. Explore the potential of GPTs and the Assistance API. Join us on this revolutionary journey into the world of AI!
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-08-22-22-19
+    path: generated_image_2023-11-08-22-22-19.webp
     alt: Introducing GPT-4 Turbo- The Future of AI Assistants
 ---
 

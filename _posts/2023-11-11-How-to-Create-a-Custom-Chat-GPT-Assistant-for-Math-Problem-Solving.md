@@ -6,7 +6,7 @@ tags: [math problem solving, chat GPT assistant]
 description: Create your own custom chat GPT assistant to solve math problems! Follow our step-by-step guide and unleash the power of personalized learning.
 img_path: '/assets/'
 image:
-    path: generated_image_2023-11-11-19-44-23.png
+    path: generated_image_2023-11-09-11-27-16.webp
     alt: How to Create a Custom Chat GPT Assistant for Math Problem Solving
 ---
 
@@ -25,7 +25,7 @@ To get started, we need to import OpenAI, the powerful tool that will enable us 
 ### 2. Set Up the Client ###
 Next, we'll set up the client using the OpenAI.OpenAI function. This will establish a connection with the OpenAI platform and allow us to access its features.
 
-![img-description](generated_image_2023-11-11-19-44-23.png)_Step-by-Step Guide to Creating a Custom Chat GPT Assistant_
+![img-description](generated_image_2023-11-09-08-49-57.webp)_Step-by-Step Guide to Creating a Custom Chat GPT Assistant_
 
 ### 3. Create the Assistant ###
 Now, it's time to create our custom chat GPT assistant. We'll use the client.beta.assistance.create function and provide a name for our tutor, such as "Math Tutor." Additionally, we'll include instructions like "You are a personal math tutor. Write and run code to answer math questions." This will help the assistant understand its role and purpose.

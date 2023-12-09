@@ -14,7 +14,7 @@ timezone: Asia/Kolkata
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: AI-Takia # the main title
+title: AI Latest Tools # the main title
 
 tagline: Latest Blogs on AI tech, Tools & SaaS # it will display as the sub-title
 
@@ -50,7 +50,7 @@ google_site_verification: # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: G-LWG69HFERM
 
 # Prefer color scheme setting.
 #
@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: 'assets/avatar.jpg'
 
 # boolean type, the global switch for TOC in posts.
 toc: true
