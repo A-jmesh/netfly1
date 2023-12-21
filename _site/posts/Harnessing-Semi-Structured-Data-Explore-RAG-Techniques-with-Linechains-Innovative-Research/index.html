@@ -1,4 +1,936 @@
-<!doctype html><html lang="en" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover" ><meta name="generator" content="Jekyll v4.3.2" /><meta property="og:title" content="Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain’s Innovative Research" /><meta property="og:locale" content="en" /><meta name="description" content="Unlock the potential of semi-structured data with RAG techniques. Dive into Langchain’s research for managing complex datasets and enhancing retrieval accuracy. Click for insights!" /><meta property="og:description" content="Unlock the potential of semi-structured data with RAG techniques. Dive into Langchain’s research for managing complex datasets and enhancing retrieval accuracy. Click for insights!" /><link rel="canonical" href="https://ajaysi.github.io/posts/Harnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research/" /><meta property="og:url" content="https://ajaysi.github.io/posts/Harnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research/" /><meta property="og:site_name" content="AI Latest Tools" /><meta property="og:image" content="https://ajaysi.github.io/assets/generated_image_2023-12-16-10-00-19.png" /><meta property="og:image:alt" content="Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2023-12-16T10:02:06+05:30" /><meta name="twitter:card" content="summary_large_image" /><meta property="twitter:image" content="https://ajaysi.github.io/assets/generated_image_2023-12-16-10-00-19.png" /><meta name="twitter:image:alt" content="Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research" /><meta property="twitter:title" content="Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain’s Innovative Research" /><meta name="twitter:site" content="@ajaysi" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-16T10:02:06+05:30","datePublished":"2023-12-16T10:02:06+05:30","description":"Unlock the potential of semi-structured data with RAG techniques. Dive into Langchain’s research for managing complex datasets and enhancing retrieval accuracy. Click for insights!","headline":"Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain’s Innovative Research","image":{"alt":"Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research","url":"https://ajaysi.github.io/assets/generated_image_2023-12-16-10-00-19.png","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ajaysi.github.io/posts/Harnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research/"},"url":"https://ajaysi.github.io/posts/Harnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research/"}</script><title>Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research | AI Latest Tools</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="AI Latest Tools"><meta name="application-name" content="AI Latest Tools"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://cdn.jsdelivr.net" ><link rel="dns-prefetch" href="https://cdn.jsdelivr.net" ><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.2/dist/tocbot.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css"> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return 'mode'; } static get MODE_ATTR() { return 'data-mode'; } static get DARK_MODE() { return 'dark'; } static get LIGHT_MODE() { return 'light'; } static get ID() { return 'mode-toggle'; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener('change', () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia('(prefers-color-scheme: dark)'); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { document.documentElement.removeAttribute(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage( { direction: ModeToggle.ID, message: this.modeStatus }, '*' ); } flipMode() { if (this.hasMode) { if (this.isSysDarkPrefer) { if (this.isLightMode) { this.clearMode(); } else { this.setLight(); } } else { if (this.isDarkMode) { this.clearMode(); } else { this.setDark(); } } } else { if (this.isSysDarkPrefer) { this.setLight(); } else { this.setDark(); } } this.notify(); } /* flipMode() */ } /* ModeToggle */ const modeToggle = new ModeToggle(); </script><body><aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end"><header class="profile-wrapper"> <a href="/" id="avatar" class="rounded-circle"> <img src="/assets/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"> </a><h1 class="site-title"> <a href="/">AI Latest Tools</a></h1><p class="site-subtitle fst-italic mb-0">Latest Blogs on AI tech, Tools & SaaS</p></header><nav class="flex-column flex-grow-1 w-100 ps-0"><ul class="nav"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tags"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle"></i> <span>ABOUT</span> </a></ul></nav><div class="sidebar-bottom d-flex flex-wrap align-items-center w-100"> <button type="button" class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/ajaysi" aria-label="github" target="_blank" rel="noopener noreferrer" > <i class="fab fa-github"></i> </a> <a href="https://twitter.com/ajaysi" aria-label="twitter" target="_blank" rel="noopener noreferrer" > <i class="fa-brands fa-x-twitter"></i> </a> <a href="javascript:location.href = 'mailto:' + ['example','domain.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="" aria-label="linkedin" target="_blank" rel="noopener noreferrer" > <i class="fab fa-linkedin"></i> </a></div></aside><div id="main-wrapper" class="d-flex justify-content-center"><div class="container d-flex flex-column px-xxl-5"><header id="topbar-wrapper" aria-label="Top Bar"><div id="topbar" class="d-flex align-items-center justify-content-between px-lg-3 h-100" ><nav id="breadcrumb" aria-label="Breadcrumb"> <span> <a href="/"> Home </a> </span> <span>Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research</span></nav><button type="button" id="sidebar-trigger" class="btn btn-link"> <i class="fas fa-bars fa-fw"></i> </button><div id="topbar-title"> Post</div><button type="button" id="search-trigger" class="btn btn-link"> <i class="fas fa-search fa-fw"></i> </button> <search class="align-items-center ms-3 ms-lg-0"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..." > </search> <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">Cancel</button></div></header><div class="row flex-grow-1"><main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4"><article class="px-1"><header><h1 data-toc-skip>Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research</h1><div class="post-meta text-muted"> <span> Posted <time data-ts="1702701126" data-df="ll" data-bs-toggle="tooltip" data-bs-placement="bottom" > Dec 16, 2023 </time> </span><div class="mt-3 mb-3"> <a href="/assets/generated_image_2023-12-16-10-00-19.png" class="popup img-link preview-img shimmer"><img src="/assets/generated_image_2023-12-16-10-00-19.png" alt="Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain&apos;s Innovative Research" width="1200" height="630" loading="lazy"></a><figcaption class="text-center pt-2 pb-2">Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research</figcaption></div><div class="d-flex justify-content-between"> <span> By <em> <a href="https://twitter.com/username">ajaysi</a> </em> </span> <span class="readtime" data-bs-toggle="tooltip" data-bs-placement="bottom" title="1145 words" > <em>6 min</em> read</span></div></div></header><div class="content"><h1 id="mastering-semi-structured-data-with-retrieval-augmented-generation-techniques-">Mastering Semi-Structured Data with Retrieval Augmented Generation Techniques 📊</h1><h2 id="introduction-"><span class="me-2">Introduction 📑</span><a href="#introduction-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>The digital world is brimming with data of all sorts, ranging from the meticulously structured to the wildly unstructured. A significant portion of this data landscape is semi-structured, blending elements like tables and images within text. For developers and data scientists working with Large Language Models (LLMs), this mixed bag presents both opportunities and challenges. The evolving field of Retrieval Augmented Generation (RAG) is at the forefront of tackling this complexity, aiming to efficiently manage and extract meaningful insights from such hybrid data sources. This blog dives into the latest research from Langchain, showcasing benchmarking methods and insights for enhanced document retrieval, with a special focus on RAG’s role in understanding semi-structured content.</p><div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- `site.alt_lang` can specify a language different from the UI -->
+<html lang="en" >
+  <!-- The Head -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+  >
+
+  
+
+  
+    
+
+    
+      
+      
+
+      
+        <!-- it's a local file path -->
+
+      
+    
+  
+
+  
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain’s Innovative Research" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Unlock the potential of semi-structured data with RAG techniques. Dive into Langchain’s research for managing complex datasets and enhancing retrieval accuracy. Click for insights!" />
+<meta property="og:description" content="Unlock the potential of semi-structured data with RAG techniques. Dive into Langchain’s research for managing complex datasets and enhancing retrieval accuracy. Click for insights!" />
+<link rel="canonical" href="http://localhost:4000/posts/Harnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research/" />
+<meta property="og:url" content="http://localhost:4000/posts/Harnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research/" />
+<meta property="og:site_name" content="AI Latest Tools" />
+<meta property="og:image" content="http://localhost:4000/assets/generated_image_2023-12-16-10-00-19.webp" />
+<meta property="og:image:alt" content="Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-12-16T10:02:06+05:30" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/generated_image_2023-12-16-10-00-19.webp" />
+<meta name="twitter:image:alt" content="Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research" />
+<meta property="twitter:title" content="Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain’s Innovative Research" />
+<meta name="twitter:site" content="@ajaysi" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-16T10:02:06+05:30","datePublished":"2023-12-16T10:02:06+05:30","description":"Unlock the potential of semi-structured data with RAG techniques. Dive into Langchain’s research for managing complex datasets and enhancing retrieval accuracy. Click for insights!","headline":"Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain’s Innovative Research","image":{"alt":"Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research","url":"http://localhost:4000/assets/generated_image_2023-12-16-10-00-19.webp","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Harnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research/"},"url":"http://localhost:4000/posts/Harnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+
+  <title>Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research | AI Latest Tools
+  </title>
+
+  <!--
+  The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
+  Generated by: https://realfavicongenerator.net/
+-->
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="AI Latest Tools">
+<meta name="application-name" content="AI Latest Tools">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+  
+    
+      <link rel="preconnect" href="https://fonts.googleapis.com" >
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+    
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+    
+      <link rel="preconnect" href="https://fonts.googleapis.com" >
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+    
+      <link rel="preconnect" href="https://cdn.jsdelivr.net" >
+      <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" >
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
+  
+
+  <!-- GA -->
+  
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.2/dist/tocbot.min.css">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
+  
+
+  <!-- JavaScript -->
+
+  
+    <!-- Switch the mode between dark and light. -->
+
+<script type="text/javascript">
+  class ModeToggle {
+    static get MODE_KEY() {
+      return 'mode';
+    }
+    static get MODE_ATTR() {
+      return 'data-mode';
+    }
+    static get DARK_MODE() {
+      return 'dark';
+    }
+    static get LIGHT_MODE() {
+      return 'light';
+    }
+    static get ID() {
+      return 'mode-toggle';
+    }
+
+    constructor() {
+      if (this.hasMode) {
+        if (this.isDarkMode) {
+          if (!this.isSysDarkPrefer) {
+            this.setDark();
+          }
+        } else {
+          if (this.isSysDarkPrefer) {
+            this.setLight();
+          }
+        }
+      }
+
+      let self = this;
+
+      /* always follow the system prefers */
+      this.sysDarkPrefers.addEventListener('change', () => {
+        if (self.hasMode) {
+          if (self.isDarkMode) {
+            if (!self.isSysDarkPrefer) {
+              self.setDark();
+            }
+          } else {
+            if (self.isSysDarkPrefer) {
+              self.setLight();
+            }
+          }
+
+          self.clearMode();
+        }
+
+        self.notify();
+      });
+    } /* constructor() */
+
+    get sysDarkPrefers() {
+      return window.matchMedia('(prefers-color-scheme: dark)');
+    }
+
+    get isSysDarkPrefer() {
+      return this.sysDarkPrefers.matches;
+    }
+
+    get isDarkMode() {
+      return this.mode === ModeToggle.DARK_MODE;
+    }
+
+    get isLightMode() {
+      return this.mode === ModeToggle.LIGHT_MODE;
+    }
+
+    get hasMode() {
+      return this.mode != null;
+    }
+
+    get mode() {
+      return sessionStorage.getItem(ModeToggle.MODE_KEY);
+    }
+
+    /* get the current mode on screen */
+    get modeStatus() {
+      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
+        return ModeToggle.DARK_MODE;
+      } else {
+        return ModeToggle.LIGHT_MODE;
+      }
+    }
+
+    setDark() {
+      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
+      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
+    }
+
+    setLight() {
+      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
+      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
+    }
+
+    clearMode() {
+      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
+      sessionStorage.removeItem(ModeToggle.MODE_KEY);
+    }
+
+    /* Notify another plugins that the theme mode has changed */
+    notify() {
+      window.postMessage(
+        {
+          direction: ModeToggle.ID,
+          message: this.modeStatus
+        },
+        '*'
+      );
+    }
+
+    flipMode() {
+      if (this.hasMode) {
+        if (this.isSysDarkPrefer) {
+          if (this.isLightMode) {
+            this.clearMode();
+          } else {
+            this.setLight();
+          }
+        } else {
+          if (this.isDarkMode) {
+            this.clearMode();
+          } else {
+            this.setDark();
+          }
+        }
+      } else {
+        if (this.isSysDarkPrefer) {
+          this.setLight();
+        } else {
+          this.setDark();
+        }
+      }
+
+      this.notify();
+    } /* flipMode() */
+  } /* ModeToggle */
+
+  const modeToggle = new ModeToggle();
+</script>
+
+  
+
+  <!-- A placeholder to allow defining custom metadata -->
+
+</head>
+
+
+  <body>
+    <!-- The Side Bar -->
+
+<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  <header class="profile-wrapper">
+    <a href="/" id="avatar" class="rounded-circle">
+      
+        
+        <img src="/assets/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+      
+    </a>
+
+    <h1 class="site-title">
+      <a href="/">AI Latest Tools</a>
+    </h1>
+    <p class="site-subtitle fst-italic mb-0">Latest Blogs on AI tech, Tools & SaaS</p>
+  </header>
+  <!-- .profile-wrapper -->
+
+  <nav class="flex-column flex-grow-1 w-100 ps-0">
+    <ul class="nav">
+      <!-- home -->
+      <li class="nav-item">
+        <a href="/" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>HOME</span>
+        </a>
+      </li>
+      <!-- the real tabs -->
+      
+        <li class="nav-item">
+          <a href="/categories/" class="nav-link">
+            <i class="fa-fw fas fa-stream"></i>
+            
+
+            <span>CATEGORIES</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/tags/" class="nav-link">
+            <i class="fa-fw fas fa-tags"></i>
+            
+
+            <span>TAGS</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/archives/" class="nav-link">
+            <i class="fa-fw fas fa-archive"></i>
+            
+
+            <span>ARCHIVES</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/about/" class="nav-link">
+            <i class="fa-fw fas fa-info-circle"></i>
+            
+
+            <span>ABOUT</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+    </ul>
+  </nav>
+
+  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+    
+      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
+        <i class="fas fa-adjust"></i>
+      </button>
+
+      
+        <span class="icon-border"></span>
+      
+    
+
+    
+      
+
+      
+        <a
+          href="https://github.com/ajaysi"
+          aria-label="github"
+          
+
+          
+            target="_blank"
+            
+          
+
+          
+
+          
+            rel="noopener noreferrer"
+          
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+
+      
+        <a
+          href="https://twitter.com/ajaysi"
+          aria-label="twitter"
+          
+
+          
+            target="_blank"
+            
+          
+
+          
+
+          
+            rel="noopener noreferrer"
+          
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      
+    
+      
+
+      
+        <a
+          href="javascript:location.href = 'mailto:' + ['example','domain.com'].join('@')"
+          aria-label="email"
+          
+
+          
+
+          
+
+          
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      
+    
+      
+
+      
+        <a
+          href=""
+          aria-label="linkedin"
+          
+
+          
+            target="_blank"
+            
+          
+
+          
+
+          
+            rel="noopener noreferrer"
+          
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      
+    
+  </div>
+  <!-- .sidebar-bottom -->
+</aside>
+<!-- #sidebar -->
+
+
+    <div id="main-wrapper" class="d-flex justify-content-center">
+      <div class="container d-flex flex-column px-xxl-5">
+        <!-- The Top Bar -->
+
+<header id="topbar-wrapper" aria-label="Top Bar">
+  <div
+    id="topbar"
+    class="d-flex align-items-center justify-content-between px-lg-3 h-100"
+  >
+    <nav id="breadcrumb" aria-label="Breadcrumb">
+      
+
+      
+        
+          
+            <span>
+              <a href="/">
+                Home
+              </a>
+            </span>
+
+          
+        
+          
+        
+          
+            
+              <span>Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research</span>
+            
+
+          
+        
+      
+    </nav>
+    <!-- endof #breadcrumb -->
+
+    <button type="button" id="sidebar-trigger" class="btn btn-link">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
+
+    <div id="topbar-title">
+      Post
+    </div>
+
+    <button type="button" id="search-trigger" class="btn btn-link">
+      <i class="fas fa-search fa-fw"></i>
+    </button>
+
+    <search class="align-items-center ms-3 ms-lg-0">
+      <i class="fas fa-search fa-fw"></i>
+      <input
+        class="form-control"
+        id="search-input"
+        type="search"
+        aria-label="search"
+        autocomplete="off"
+        placeholder="Search..."
+      >
+    </search>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">Cancel</button>
+  </div>
+</header>
+
+
+        <div class="row flex-grow-1">
+          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+<article class="px-1">
+  <header>
+    <h1 data-toc-skip>Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research</h1>
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1702701126"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Dec 16, 2023
+</time>
+
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+        
+        
+        
+
+        
+
+        <div class="mt-3 mb-3">
+          <a href="/assets/generated_image_2023-12-16-10-00-19.webp" class="popup img-link preview-img shimmer"><img src="/assets/generated_image_2023-12-16-10-00-19.webp"  alt="Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain&apos;s Innovative Research" width="1200" height="630"  loading="lazy"></a><figcaption class="text-center pt-2 pb-2">Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research</figcaption></div>
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              <a href="https://twitter.com/username">ajaysi</a>
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="1145 words"
+>
+  <em>6 min</em> read</span>
+
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <h1 id="mastering-semi-structured-data-with-retrieval-augmented-generation-techniques-">Mastering Semi-Structured Data with Retrieval Augmented Generation Techniques 📊</h1>
+
+<h2 id="introduction-"><span class="me-2">Introduction 📑</span><a href="#introduction-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>The digital world is brimming with data of all sorts, ranging from the meticulously structured to the wildly unstructured. A significant portion of this data landscape is semi-structured, blending elements like tables and images within text. For developers and data scientists working with Large Language Models (LLMs), this mixed bag presents both opportunities and challenges. The evolving field of Retrieval Augmented Generation (RAG) is at the forefront of tackling this complexity, aiming to efficiently manage and extract meaningful insights from such hybrid data sources. This blog dives into the latest research from Langchain, showcasing benchmarking methods and insights for enhanced document retrieval, with a special focus on RAG’s role in understanding semi-structured content.</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -80,7 +1012,7 @@
 80
 81
 82
-</pre><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">json</span>
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">json</span>
 
 <span class="k">def</span> <span class="nf">extract_tables_from_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
   <span class="sh">"""</span><span class="s">Extracts tables from a given text string.
@@ -162,4 +1094,2552 @@
 <span class="c1"># Print the extracted tables
 </span><span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">tables</span><span class="p">:</span>
   <span class="nf">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
-</pre></table></code></div></div><h2 id="the-core-of-rag-and-its-applications-"><span class="me-2">The Core of RAG and Its Applications 💡</span><a href="#the-core-of-rag-and-its-applications-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>The essence of RAG lies in its ability to harness the collective strength of LLMs and specialized retrieval techniques, creating a synergy that empowers models to generate responses based on a wide array of data types. When it comes to semi-structured data, such as tables embedded in text or interspersed with images, RAG becomes particularly invaluable. Recent breakthroughs in this field have been instrumental in setting new benchmarks for how we approach and handle such complex data ecosystems.</p><h2 id="strategies-for-rag-excellence-"><span class="me-2">Strategies for RAG Excellence 🏆</span><a href="#strategies-for-rag-excellence-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>Several innovative strategies have been developed to improve RAG’s efficacy:</p><ol><li><strong>LLM Integration</strong>: Models that blend RAG directly into their architecture have shown superior performance across various NLP benchmarks, demonstrating the potential for more accurate semantic retrieval.<li><strong>Chained Architectures</strong>: Allowing for iterative retrieval and generation, these architectures take RAG to new heights, navigating through data with increased precision.<li><strong>Multi-Modal RAG</strong>: By incorporating images and structured data, these models acknowledge and utilize the diversity of semi-structured data.</ol><h2 id="table-rich-document-navigation-️"><span class="me-2">Table-Rich Document Navigation 🗂️</span><a href="#table-rich-document-navigation-️" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>Langchain’s recent research has pinpointed three robust methods to manage documents rich in tables:</p><ol><li><strong>Full Document Approach</strong>: By feeding entire documents, including tables, into LLMs with extensive context windows, this method keeps preprocessing to a minimum.<li><strong>Targeted Table Extraction</strong>: This precision-driven approach focuses on identifying and extracting tables for individual processing, promising enhanced accuracy.<li><strong>Semantic Chunking</strong>: By segmenting documents into semantically coherent chunks, including table data, retrieval becomes more focused and contextually relevant.</ol><h2 id="benchmarking-rag-on-semi-structured-data-"><span class="me-2">Benchmarking RAG on Semi-Structured Data 🔍</span><a href="#benchmarking-rag-on-semi-structured-data-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>To benchmark RAG’s effectiveness on semi-structured data, researchers apply a variety of strategies over mixed text and table formats. Publicly accessible evaluation notebooks serve as the platform for these assessments, which are critical in refining RAG tools and models for practical applications.</p><h2 id="evaluating-efficacy-with-the-langsmith-benchmark-"><span class="me-2">Evaluating Efficacy with the Langsmith Benchmark 📊</span><a href="#evaluating-efficacy-with-the-langsmith-benchmark-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>The Langsmith benchmark, developed on Langchain’s proprietary platform, allows for rigorous evaluation and continuous monitoring of RAG strategies. The benchmark utilizes recent financial documents and white papers to construct a question set that forms the basis for automated evaluation, providing a comparative analysis of AI-generated responses against verified answers.</p><h2 id="insights-and-innovations-from-langchains-research-"><span class="me-2">Insights and Innovations from Langchain’s Research 🔬</span><a href="#insights-and-innovations-from-langchains-research-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>Langchain’s investigations reveal that while inserting full documents into LLMs yields moderate success, the retrieval quality is influenced by the context length and the placement of facts within the document. Interestingly, targeted table extraction, though promising, faces hurdles due to inconsistent table representations. However, a novel approach involving semantic chunking by natural document boundaries like page breaks has proven highly effective, achieving impressive accuracy rates.</p><h2 id="enhancing-rag-with-ensemble-retrievers-"><span class="me-2">Enhancing RAG with Ensemble Retrievers 🚀</span><a href="#enhancing-rag-with-ensemble-retrievers-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>By ensembling different retrievers, researchers at Langchain have amplified the performance of page-based chunking. This innovative method selectively prioritizes pages with tables during the retrieval process, leading to a significant accuracy boost.</p><h2 id="conclusion-and-future-outlook-"><span class="me-2">Conclusion and Future Outlook 🔮</span><a href="#conclusion-and-future-outlook-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p>RAG is a powerful tool for navigating the complexity of semi-structured data within LLM applications. The continuous refinement of RAG strategies and solutions, as showcased by Langchain’s research, points to a promising future for document retrieval and reasoning tasks. By choosing the appropriate strategy and leveraging inventive solutions like ensemble retrievers, the potential of long-context LLMs for rapid and accurate document retrieval can be fully realized. As we move forward, the pursuit of precision in targeted table extraction stands to further elevate the utility and efficiency of RAG applications.</p><p>For further insights into RAG on semi-structured data, explore the benchmarks and tools discussed in this article, such as the Ragas and LangSmith platforms for pipeline evaluation, and the research reports available at <a href="https://blog.langchain.dev/">Langchain’s Blog</a>.</p><h2 id="faqs-"><span class="me-2">FAQs ❓</span><a href="#faqs-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><p><strong>Q: What is Retrieval Augmented Generation (RAG)?</strong> A: RAG is a technique that combines LLMs with specialized retrieval methods to generate responses based on a diverse set of data, including semi-structured content.</p><p><strong>Q: Why is RAG important for semi-structured data?</strong> A: Semi-structured data presents unique challenges due to its mixed format. RAG is crucial for effectively managing and extracting information from such data, which includes tables, text, and images.</p><p><strong>Q: How can RAG be benchmarked for semi-structured data?</strong> A: RAG can be benchmarked using strategies tailored to mixed data formats and evaluated using benchmarks like the Langsmith benchmark on public evaluation notebooks.</p><h2 id="references-"><span class="me-2">References 📚</span><a href="#references-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><ul><li>“Benchmarking RAG on tables - blog.langchain.dev,” 2023, [Online]. Available: https://blog.langchain.dev/benchmarking-rag-on-tables/.<li>“Multi-Vector Retriever for RAG on tables, text, and images,” [Online]. Available: https://blog.langchain.dev/semi-structured-multi-modal-rag/.<li>“12 Top Retrieval Augmented Generation (RAG) Tools and Models in 2024,” [Online]. Available: https://expertbeacon.com/retrieval-augmented-generation/.<li>“Evaluating RAG pipelines with Ragas + LangSmith,” [Online]. Available: https://blog.langchain.dev/evaluating-rag-pipelines-with-ragas-langsmith/.</ul></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw me-1"></i> <a href="/categories/rag/">RAG</a>, <a href="/categories/langchain/">Langchain</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw me-1"></i> <a href="/tags/semi-structured-data/" class="post-tag no-text-decoration" >Semi-Structured Data</a> <a href="/tags/retrieval-accuracy-techniques/" class="post-tag no-text-decoration" >Retrieval Accuracy Techniques</a></div><div class=" post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2 " ><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by the author.</div><div class="share-wrapper d-flex align-items-center"> <span class="share-label text-muted me-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Harnessing%20Semi-Structured%20Data-%20Explore%20RAG%20Techniques%20with%20Langchain's%20Innovative%20Research%20-%20AI%20Latest%20Tools&url=https%3A%2F%2Fajaysi.github.io%2Fposts%2FHarnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research%2F" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter" > <i class="fa-fw fa-brands fa-square-x-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Harnessing%20Semi-Structured%20Data-%20Explore%20RAG%20Techniques%20with%20Langchain's%20Innovative%20Research%20-%20AI%20Latest%20Tools&u=https%3A%2F%2Fajaysi.github.io%2Fposts%2FHarnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research%2F" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook" > <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://t.me/share/url?url=https%3A%2F%2Fajaysi.github.io%2Fposts%2FHarnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research%2F&text=Harnessing%20Semi-Structured%20Data-%20Explore%20RAG%20Techniques%20with%20Langchain's%20Innovative%20Research%20-%20AI%20Latest%20Tools" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram" > <i class="fa-fw fab fa-telegram"></i> </a> <button id="copy-link" aria-label="Copy link" class="btn small" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy link" data-title-succeed="Link copied successfully!" > <i class="fa-fw fas fa-link pe-none"></i> </button> </span></div></div></div></article></main><aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 mb-5 text-muted"><div class="access"><section id="access-lastmod"><h2 class="panel-heading">Recently Updated</h2><ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2"><li class="text-truncate lh-lg"> <a href="/posts/Introducing-GPT-4-Turbo-The-Future-of-AI-Assistants/">Introducing GPT-4 Turbo- The Future of AI Assistants</a><li class="text-truncate lh-lg"> <a href="/posts/How-to-Create-a-Custom-Chat-GPT-Assistant-for-Math-Problem-Solving/">How to Create a Custom Chat GPT Assistant for Math Problem Solving</a><li class="text-truncate lh-lg"> <a href="/posts/Revolutionizing-Industries-The-Power-of-Generative-AI-in-Transforming-Business-Processes/">Revolutionizing Industries The Power of Generative AI in Transforming Business Processes</a><li class="text-truncate lh-lg"> <a href="/posts/Unlocking-the-Power-of-Generative-AI-Revolutionizing-SEO-Strategies/">Unlocking the Power of Generative AI Revolutionizing SEO Strategies</a><li class="text-truncate lh-lg"> <a href="/posts/The-Impact-of-Artificial-Intelligence-on-Microsofts-News-Website/">The Impact of Artificial Intelligence on Microsoft's News Website</a></ul></section><section><h2 class="panel-heading">Trending Tags</h2><div class="d-flex flex-wrap mt-3 mb-1 me-3"> <a class="post-tag btn btn-outline-primary" href="/tags/ai/">AI</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-content-tools/">AI Content Tools</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-driven-development/">AI-Driven Development</a> <a class="post-tag btn btn-outline-primary" href="/tags/generative-ai/">Generative AI</a> <a class="post-tag btn btn-outline-primary" href="/tags/seo-strategies/">SEO strategies</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-acquisition/">AI acquisition</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-advancements/">AI Advancements</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-animation-software/">AI Animation Software</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-api/">AI API</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-chatbots/">AI chatbots</a></div></section></div><section id="toc-wrapper" class="ps-0 pe-4"><h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2><nav id="toc"></nav></section></aside></div><div class="row"><div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4"><aside id="related-posts" aria-labelledby="related-label"><h3 class="mb-4" id="related-label">Further Reading</h3><nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4"><article class="col"> <a href="/posts/Harness-AI-Innovation-LangChains-Breakthrough-for-Python-App-Development/" class="post-preview card h-100"><div class="card-body"> <time data-ts="1702644311" data-df="ll" > Dec 15, 2023 </time><h4 class="pt-0 my-2">AI Innovation- LangChain's Breakthrough for Python App Development</h4><div class="text-muted"><p> Revolutionizing Python Development: The LangChain Breakthrough Step into the era of intelligent Python app development where LangChain spearheads the integration of cutting-edge artificial intelli...</p></div></div></a></article></nav></aside><nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation"> <a href="/posts/Unlock-AI-Powered-Coding-with-ChatDev-Your-Comprehensive-Installation-Guide/" class="btn btn-outline-primary" aria-label="Older" ><p>AI-Powered Coding with ChatDev- Your Comprehensive Installation Guide</p></a> <a href="/posts/Revolutionize-Your-Data-Analysis-with-RoboVis-The-Future-of-AI-Assisted-Research/" class="btn btn-outline-primary" aria-label="Newer" ><p>Revolutionize Your Data Analysis with RoboVis- The Future of AI-Assisted Research</p></a></nav><footer aria-label="Site Info" class=" d-flex flex-column justify-content-center text-muted flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3 " ><p> © <time>2023</time> <a href="https://twitter.com/username">ajaysi</a>. <span data-bs-toggle="tooltip" data-bs-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author." >Some rights reserved.</span></p><p>Using the <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a></p></footer></div></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-11 content"><div id="search-hints"><section><h2 class="panel-heading">Trending Tags</h2><div class="d-flex flex-wrap mt-3 mb-1 me-3"> <a class="post-tag btn btn-outline-primary" href="/tags/ai/">AI</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-content-tools/">AI Content Tools</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-driven-development/">AI-Driven Development</a> <a class="post-tag btn btn-outline-primary" href="/tags/generative-ai/">Generative AI</a> <a class="post-tag btn btn-outline-primary" href="/tags/seo-strategies/">SEO strategies</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-acquisition/">AI acquisition</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-advancements/">AI Advancements</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-animation-software/">AI Animation Software</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-api/">AI API</a> <a class="post-tag btn btn-outline-primary" href="/tags/ai-chatbots/">AI chatbots</a></div></section></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><aside aria-label="Scroll to Top"> <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow"> <i class="fas fa-angle-up"></i> </button></aside></div><div id="mask"></div><aside id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-animation="true" data-bs-autohide="false" ><div class="toast-header"> <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close" ></button></div><div class="toast-body text-center pt-0"><p class="px-2 mb-3">A new version of content is available.</p><button type="button" class="btn btn-primary" aria-label="Update"> Update </button></div></aside><script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.2/dist/tocbot.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=G-LWG69HFERM"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-LWG69HFERM'); }); </script> <script> /* Note: dependent library will be loaded in `js-selector.html` */ SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<article class="px-1 px-sm-2 px-lg-4 px-xl-0"><header><h2><a href="{url}">{title}</a></h2><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div></header><p>{snippet}</p></article>', noResultsText: '<p class="mt-5"></p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="the-core-of-rag-and-its-applications-"><span class="me-2">The Core of RAG and Its Applications 💡</span><a href="#the-core-of-rag-and-its-applications-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>The essence of RAG lies in its ability to harness the collective strength of LLMs and specialized retrieval techniques, creating a synergy that empowers models to generate responses based on a wide array of data types. When it comes to semi-structured data, such as tables embedded in text or interspersed with images, RAG becomes particularly invaluable. Recent breakthroughs in this field have been instrumental in setting new benchmarks for how we approach and handle such complex data ecosystems.</p>
+
+<h2 id="strategies-for-rag-excellence-"><span class="me-2">Strategies for RAG Excellence 🏆</span><a href="#strategies-for-rag-excellence-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Several innovative strategies have been developed to improve RAG’s efficacy:</p>
+
+<ol>
+  <li><strong>LLM Integration</strong>: Models that blend RAG directly into their architecture have shown superior performance across various NLP benchmarks, demonstrating the potential for more accurate semantic retrieval.</li>
+  <li><strong>Chained Architectures</strong>: Allowing for iterative retrieval and generation, these architectures take RAG to new heights, navigating through data with increased precision.</li>
+  <li><strong>Multi-Modal RAG</strong>: By incorporating images and structured data, these models acknowledge and utilize the diversity of semi-structured data.</li>
+</ol>
+
+<h2 id="table-rich-document-navigation-️"><span class="me-2">Table-Rich Document Navigation 🗂️</span><a href="#table-rich-document-navigation-️" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Langchain’s recent research has pinpointed three robust methods to manage documents rich in tables:</p>
+
+<ol>
+  <li><strong>Full Document Approach</strong>: By feeding entire documents, including tables, into LLMs with extensive context windows, this method keeps preprocessing to a minimum.</li>
+  <li><strong>Targeted Table Extraction</strong>: This precision-driven approach focuses on identifying and extracting tables for individual processing, promising enhanced accuracy.</li>
+  <li><strong>Semantic Chunking</strong>: By segmenting documents into semantically coherent chunks, including table data, retrieval becomes more focused and contextually relevant.</li>
+</ol>
+
+<h2 id="benchmarking-rag-on-semi-structured-data-"><span class="me-2">Benchmarking RAG on Semi-Structured Data 🔍</span><a href="#benchmarking-rag-on-semi-structured-data-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>To benchmark RAG’s effectiveness on semi-structured data, researchers apply a variety of strategies over mixed text and table formats. Publicly accessible evaluation notebooks serve as the platform for these assessments, which are critical in refining RAG tools and models for practical applications.</p>
+
+<h2 id="evaluating-efficacy-with-the-langsmith-benchmark-"><span class="me-2">Evaluating Efficacy with the Langsmith Benchmark 📊</span><a href="#evaluating-efficacy-with-the-langsmith-benchmark-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>The Langsmith benchmark, developed on Langchain’s proprietary platform, allows for rigorous evaluation and continuous monitoring of RAG strategies. The benchmark utilizes recent financial documents and white papers to construct a question set that forms the basis for automated evaluation, providing a comparative analysis of AI-generated responses against verified answers.</p>
+
+<h2 id="insights-and-innovations-from-langchains-research-"><span class="me-2">Insights and Innovations from Langchain’s Research 🔬</span><a href="#insights-and-innovations-from-langchains-research-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Langchain’s investigations reveal that while inserting full documents into LLMs yields moderate success, the retrieval quality is influenced by the context length and the placement of facts within the document. Interestingly, targeted table extraction, though promising, faces hurdles due to inconsistent table representations. However, a novel approach involving semantic chunking by natural document boundaries like page breaks has proven highly effective, achieving impressive accuracy rates.</p>
+
+<h2 id="enhancing-rag-with-ensemble-retrievers-"><span class="me-2">Enhancing RAG with Ensemble Retrievers 🚀</span><a href="#enhancing-rag-with-ensemble-retrievers-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>By ensembling different retrievers, researchers at Langchain have amplified the performance of page-based chunking. This innovative method selectively prioritizes pages with tables during the retrieval process, leading to a significant accuracy boost.</p>
+
+<h2 id="conclusion-and-future-outlook-"><span class="me-2">Conclusion and Future Outlook 🔮</span><a href="#conclusion-and-future-outlook-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>RAG is a powerful tool for navigating the complexity of semi-structured data within LLM applications. The continuous refinement of RAG strategies and solutions, as showcased by Langchain’s research, points to a promising future for document retrieval and reasoning tasks. By choosing the appropriate strategy and leveraging inventive solutions like ensemble retrievers, the potential of long-context LLMs for rapid and accurate document retrieval can be fully realized. As we move forward, the pursuit of precision in targeted table extraction stands to further elevate the utility and efficiency of RAG applications.</p>
+
+<p>For further insights into RAG on semi-structured data, explore the benchmarks and tools discussed in this article, such as the Ragas and LangSmith platforms for pipeline evaluation, and the research reports available at <a href="https://blog.langchain.dev/">Langchain’s Blog</a>.</p>
+
+<h2 id="faqs-"><span class="me-2">FAQs ❓</span><a href="#faqs-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p><strong>Q: What is Retrieval Augmented Generation (RAG)?</strong>
+A: RAG is a technique that combines LLMs with specialized retrieval methods to generate responses based on a diverse set of data, including semi-structured content.</p>
+
+<p><strong>Q: Why is RAG important for semi-structured data?</strong>
+A: Semi-structured data presents unique challenges due to its mixed format. RAG is crucial for effectively managing and extracting information from such data, which includes tables, text, and images.</p>
+
+<p><strong>Q: How can RAG be benchmarked for semi-structured data?</strong>
+A: RAG can be benchmarked using strategies tailored to mixed data formats and evaluated using benchmarks like the Langsmith benchmark on public evaluation notebooks.</p>
+
+<h2 id="references-"><span class="me-2">References 📚</span><a href="#references-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li>“Benchmarking RAG on tables - blog.langchain.dev,” 2023, [Online]. Available: https://blog.langchain.dev/benchmarking-rag-on-tables/.</li>
+  <li>“Multi-Vector Retriever for RAG on tables, text, and images,” [Online]. Available: https://blog.langchain.dev/semi-structured-multi-modal-rag/.</li>
+  <li>“12 Top Retrieval Augmented Generation (RAG) Tools and Models in 2024,” [Online]. Available: https://expertbeacon.com/retrieval-augmented-generation/.</li>
+  <li>“Evaluating RAG pipelines with Ragas + LangSmith,” [Online]. Available: https://blog.langchain.dev/evaluating-rag-pipelines-with-ragas-langsmith/.</li>
+</ul>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/rag/">RAG</a>,
+          <a href="/categories/langchain/">Langchain</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/semi-structured-data/"
+            class="post-tag no-text-decoration"
+          >Semi-Structured Data</a>
+        
+          <a
+            href="/tags/retrieval-accuracy-techniques/"
+            class="post-tag no-text-decoration"
+          >Retrieval Accuracy Techniques</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted me-1">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+      
+      <a
+        href="https://twitter.com/intent/tweet?text=Harnessing%20Semi-Structured%20Data-%20Explore%20RAG%20Techniques%20with%20Langchain's%20Innovative%20Research%20-%20AI%20Latest%20Tools&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHarnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Twitter"
+        target="_blank"
+        rel="noopener"
+        aria-label="Twitter"
+      >
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+      
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?title=Harnessing%20Semi-Structured%20Data-%20Explore%20RAG%20Techniques%20with%20Langchain's%20Innovative%20Research%20-%20AI%20Latest%20Tools&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHarnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Facebook"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+      
+      <a
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FHarnessing-Semi-Structured-Data-Explore-RAG-Techniques-with-Linechains-Innovative-Research%2F&text=Harnessing%20Semi-Structured%20Data-%20Explore%20RAG%20Techniques%20with%20Langchain's%20Innovative%20Research%20-%20AI%20Latest%20Tools"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Telegram"
+        target="_blank"
+        rel="noopener"
+        aria-label="Telegram"
+      >
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none"></i>
+    </button>
+  </span>
+</div>
+
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
+</article>
+
+
+            
+          </main>
+
+          <!-- panel -->
+          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 mb-5 text-muted">
+            <div class="access">
+              <!-- Get the last 5 posts from lastmod list. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="access-lastmod">
+    <h2 class="panel-heading">Recently Updated</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Introducing-GPT-4-Turbo-The-Future-of-AI-Assistants/">Introducing GPT-4 Turbo- The Future of AI Assistants</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/How-to-Create-a-Custom-Chat-GPT-Assistant-for-Math-Problem-Solving/">How to Create a Custom Chat GPT Assistant for Math Problem Solving</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Revolutionizing-Industries-The-Power-of-Generative-AI-in-Transforming-Business-Processes/">Revolutionizing Industries The Power of Generative AI in Transforming Business Processes</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Unlocking-the-Power-of-Generative-AI-Revolutionizing-SEO-Strategies/">Unlocking the Power of Generative AI Revolutionizing SEO Strategies</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/The-Impact-of-Artificial-Intelligence-on-Microsofts-News-Website/">The Impact of Artificial Intelligence on Microsoft's News Website</a>
+        </li>
+      
+    </ul>
+  </section>
+  <!-- #access-lastmod -->
+
+
+              <!-- The trending tags list -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+
+
+  <section>
+    <h2 class="panel-heading">Trending Tags</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai/">AI</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-content-tools/">AI Content Tools</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-driven-development/">AI-Driven Development</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/generative-ai/">Generative AI</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/seo-strategies/">SEO strategies</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-acquisition/">AI acquisition</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-advancements/">AI Advancements</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-animation-software/">AI Animation Software</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-api/">AI API</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-chatbots/">AI chatbots</a>
+      
+    </div>
+  </section>
+
+
+            </div>
+
+            
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
+          </aside>
+        </div>
+
+        <div class="row">
+          <!-- tail -->
+          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Harness-AI-Innovation-LangChains-Breakthrough-for-Python-App-Development/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1702644311"
+  data-df="ll"
+  
+>
+  Dec 15, 2023
+</time>
+
+              <h4 class="pt-0 my-2">AI Innovation- LangChain's Breakthrough for Python App Development</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Revolutionizing Python Development: The LangChain Breakthrough
+
+Step into the era of intelligent Python app development where LangChain spearheads the integration of cutting-edge artificial intelli...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/Unlock-AI-Powered-Coding-with-ChatDev-Your-Comprehensive-Installation-Guide/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>AI-Powered Coding with ChatDev- Your Comprehensive Installation Guide</p>
+    </a>
+  
+
+  
+    <a
+      href="/posts/Revolutionize-Your-Data-Analysis-with-RoboVis-The-Future-of-AI-Assisted-Research/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Revolutionize Your Data Analysis with RoboVis- The Future of AI-Assisted Research</p>
+    </a>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
+            
+
+            <!-- The Footer -->
+
+<footer
+  aria-label="Site Info"
+  class="
+    d-flex flex-column justify-content-center text-muted
+    flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
+  "
+>
+  <p>
+    ©
+    <time>2023</time>
+    <a href="https://twitter.com/username">ajaysi</a>.
+    
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author."
+      >Some rights reserved.</span>
+    
+  </p>
+
+  <p>Using the <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+  </p>
+</footer>
+
+          </div>
+        </div>
+
+        <!-- The Search results -->
+
+<div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+  <div class="col-11 content">
+    <div id="search-hints">
+      <!-- The trending tags list -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+
+
+  <section>
+    <h2 class="panel-heading">Trending Tags</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai/">AI</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-content-tools/">AI Content Tools</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-driven-development/">AI-Driven Development</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/generative-ai/">Generative AI</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/seo-strategies/">SEO strategies</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-acquisition/">AI acquisition</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-advancements/">AI Advancements</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-animation-software/">AI Animation Software</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-api/">AI API</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/ai-chatbots/">AI chatbots</a>
+      
+    </div>
+  </section>
+
+
+    </div>
+    <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+  </div>
+</div>
+
+      </div>
+
+      <aside aria-label="Scroll to Top">
+        <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow">
+          <i class="fas fa-angle-up"></i>
+        </button>
+      </aside>
+    </div>
+
+    <div id="mask"></div>
+
+    
+      <aside
+  id="notification"
+  class="toast"
+  role="alert"
+  aria-live="assertive"
+  aria-atomic="true"
+  data-bs-animation="true"
+  data-bs-autohide="false"
+>
+  <div class="toast-header">
+    <button
+      type="button"
+      class="btn-close ms-auto"
+      data-bs-dismiss="toast"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="toast-body text-center pt-0">
+    <p class="px-2 mb-3">A new version of content is available.</p>
+    <button type="button" class="btn btn-primary" aria-label="Update">
+      Update
+    </button>
+  </div>
+</aside>
+
+    
+
+    <!-- JavaScripts -->
+
+    <!-- JS selector for site. -->
+
+<!-- commons -->
+
+
+
+<!-- layout specified -->
+
+
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.2/dist/tocbot.min.js"></script>
+
+
+
+
+
+
+<script defer src="/assets/js/dist/post.min.js"></script>
+
+
+
+
+
+
+    
+
+    <!--
+  Jekyll Simple Search loader
+  See: <https://github.com/christian-fei/Simple-Jekyll-Search>
+-->
+
+
+
+
+
+<script>
+  /* Note: dependent library will be loaded in `js-selector.html` */
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: '/assets/js/data/search.json',
+    searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
+    noResultsText: '<p class="mt-5"></p>',
+    templateMiddleware: function(prop, value, template) {
+      if (prop === 'categories') {
+        if (value === '') {
+          return `${value}`;
+        } else {
+          return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
+        }
+      }
+
+      if (prop === 'tags') {
+        if (value === '') {
+          return `${value}`;
+        } else {
+          return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+        }
+      }
+    }
+  });
+</script>
+
+  </body>
+</html>
+

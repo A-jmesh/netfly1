@@ -1,13 +1,10 @@
 ---
 title: Unlocking Efficiency- Master Auto-GPT & R2GPT for Workflow Innovation
 date: 2023-12-15 19:44:07 +0530
-categories: [Artificial Intelligence, Productivity Tools]
+categories: [AI Tools]
 tags: [Auto-GPT, R2GPT]
 description: Discover how Auto-GPT & R2GPT revolutionize your workflow with AI. Master these tools for enhanced productivity & innovation in our comprehensive guide.
 img_path: '/assets/'
-image:
-    path: generated_image_2023-12-15-19-39-58.png
-    alt: Unlocking Efficiency- Master Auto-GPT & R2GPT for Workflow Innovation
 ---
 
 

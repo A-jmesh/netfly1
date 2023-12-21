@@ -6,7 +6,7 @@ tags: [AI-Assisted Research, Open-Source Data Analysis]
 description: Unlock the future of AI-assisted research with RoboVis, your ultimate open-source tool for data analysis and automation. Start revolutionizing your research today!
 img_path: '/assets/'
 image:
-    path: generated_image_2023-12-16-10-38-45.png
+    path: generated_image_2023-12-16-10-38-45.webp
     alt: Revolutionize Your Data Analysis with RoboVis- The Future of AI-Assisted Research
 ---
 

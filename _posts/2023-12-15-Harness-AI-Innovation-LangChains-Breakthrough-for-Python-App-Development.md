@@ -5,9 +5,6 @@ categories: [Langchain]
 tags: [Langchain App]
 description: Explore how LangChain revolutionizes AI app development for Python programmers. Simplify complex tasks & create dynamic, intelligent interactions. Start now!
 img_path: '/assets/'
-image:
-    path: generated_image_2023-12-15-18-09-42.png
-    alt: "Harness AI Innovation- LangChain's Breakthrough for Python App Development"
 ---
 
 ## Revolutionizing Python Development: The LangChain Breakthrough

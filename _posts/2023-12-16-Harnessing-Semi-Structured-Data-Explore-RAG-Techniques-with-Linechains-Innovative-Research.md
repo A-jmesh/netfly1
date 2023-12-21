@@ -6,7 +6,7 @@ tags: [Semi-Structured Data, Retrieval Accuracy Techniques]
 description: Unlock the potential of semi-structured data with RAG techniques. Dive into Langchain's research for managing complex datasets and enhancing retrieval accuracy. Click for insights!
 img_path: '/assets/'
 image:
-    path: generated_image_2023-12-16-10-00-19.png
+    path: generated_image_2023-12-16-10-00-19.webp
     alt: Harnessing Semi-Structured Data- Explore RAG Techniques with Langchain's Innovative Research
 ---
 

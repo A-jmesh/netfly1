@@ -6,7 +6,7 @@ tags: [AI Development Tools, ChatDev Guide]
 description: Discover ChatDev- Your ultimate AI-driven development team in a box. Install & leverage this tech marvel with our easy-to-follow guide. Join the revolution!
 img_path: '/assets/'
 image:
-    path: generated_image_2023-12-15-21-28-08.png
+    path: generated_image_2023-12-15-21-28-08.webp
     alt: ChatDev- Your Comprehensive Installation Guide
 ---
 

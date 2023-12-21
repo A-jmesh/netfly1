@@ -6,7 +6,7 @@ tags: [Tesla Optimus, Humanoid Robotics]
 description: Discover Tesla's Optimus Gen-2- A leap in humanoid robotics with lifelike agility & precision, shaping our future with advanced AI synergy. Explore the revolution.
 img_path: '/assets/'
 image:
-    path: generated_image_2023-12-16-11-06-54.png
+    path: generated_image_2023-12-16-11-06-54.webp
     alt: Optimus Gen-2 Unveiled- Experience Tesla's Humanoid Robotics Breakthrough
 ---
 

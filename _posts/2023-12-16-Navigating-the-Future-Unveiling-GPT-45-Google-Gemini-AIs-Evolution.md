@@ -6,7 +6,7 @@ tags: [GPT-4.5, AI Technology Trends]
 description: Explore the buzz around GPT 4.5, Google's 'Gemini', and AI's transforming role in our lives. Dive into the future of tech with this insightful AI update.
 img_path: '/assets/'
 image:
-    path: generated_image_2023-12-16-11-00-55.png
+    path: generated_image_2023-12-16-11-00-55.webp
     alt: Navigating the Future- Unveiling GPT-4.5, Google Gemini & AI's Evolution
 ---
 
