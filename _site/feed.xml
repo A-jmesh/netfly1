@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>AI Latest Tools</title>
   <subtitle>Begginer friendly AI technologies simplified &amp; explained. Know &amp; boost productivity with latest AI tools.</subtitle>
-  <updated>2023-12-21T20:21:25+05:30</updated>
+  <updated>2023-12-26T18:04:44+05:30</updated>
   <author>
     <name>ajaysi</name>
     <uri>http://localhost:4000/</uri>
@@ -20,23 +20,23 @@
 
   
   <entry>
-    <title>Google Gemini Pro API- Guide to Advanced AI Application Development</title>
-    <link href="http://localhost:4000/posts/Mastering-Google-Gemini-Pro-API-Your-Ultimate-Guide-to-Advanced-AI-Application-Development/" rel="alternate" type="text/html" title="Google Gemini Pro API- Guide to Advanced AI Application Development" />
-    <published>2023-12-17T14:32:15+05:30</published>
+    <title>Unleash Conversational Documents- Revolutionize Document Interaction with AnythingLLM</title>
+    <link href="http://localhost:4000/posts/Unleash-Conversational-Documents-Revolutionize-Document-Interaction-with-AnythingLLM/" rel="alternate" type="text/html" title="Unleash Conversational Documents- Revolutionize Document Interaction with AnythingLLM" />
+    <published>2023-12-26T09:13:59+05:30</published>
   
-    <updated>2023-12-17T14:32:15+05:30</updated>
+    <updated>2023-12-26T09:13:59+05:30</updated>
   
-    <id>http://localhost:4000/posts/Mastering-Google-Gemini-Pro-API-Your-Ultimate-Guide-to-Advanced-AI-Application-Development/</id>
-    <content src="http://localhost:4000/posts/Mastering-Google-Gemini-Pro-API-Your-Ultimate-Guide-to-Advanced-AI-Application-Development/" />
+    <id>http://localhost:4000/posts/Unleash-Conversational-Documents-Revolutionize-Document-Interaction-with-AnythingLLM/</id>
+    <content src="http://localhost:4000/posts/Unleash-Conversational-Documents-Revolutionize-Document-Interaction-with-AnythingLLM/" />
     <author>
       <name>ajaysi</name>
     </author>
 
   
     
-    <category term="LLMs" />
+    <category term="Document Management" />
     
-    <category term="Gemini" />
+    <category term="Conversational AI" />
     
   
 
@@ -48,9 +48,10 @@
 
 
 
-      Harnessing Google’s Gemini Pro API: A Developer’s Guide to Next-Level AI Integration 🚀
+      Revolutionize Document Interaction with AnythingLLM: The Open-Source Chatbot Enhancing Your Workflow
 
-In the ever-evolving realm of artificial intelligence, Google’s recent unveiling of the Gemini Pro API in Google AI Studio marks a significant milestone. The advent of Gemini Pro, often hailed as a “GPT killer” for its advanced capabilities, presents developers with unprecedented opportunities to craft sophi...
+Introduction
+As we navigate the bustling digital landscape, the ability to swiftly manage and interact with documents is not just a convenience—it’s a necessity. Enter AnythingLLM, an open-source document chatbot that’s reshaping how we converse with our files. Whether you’re an individual user...
     </summary>
   
 
@@ -58,21 +59,23 @@ In the ever-evolving realm of artificial intelligence, Google’s recent unveili
 
   
   <entry>
-    <title>Revolutionize Software Development with Meta GPT- Embracing AI-Powered Efficiency from Concept to Code</title>
-    <link href="http://localhost:4000/posts/Revolutionize-Software-Development-with-Meta-GPT-Embracing-AI-Powered-Efficiency-from-Concept-to-Code/" rel="alternate" type="text/html" title="Revolutionize Software Development with Meta GPT- Embracing AI-Powered Efficiency from Concept to Code" />
-    <published>2023-12-17T09:22:59+05:30</published>
+    <title>Revolutionize REST API Calls- Embrace the Transformative Power of RestGPT</title>
+    <link href="http://localhost:4000/posts/Revolutionize-REST-API-Calls-Embrace-the-Transformative-Power-of-RestGPT/" rel="alternate" type="text/html" title="Revolutionize REST API Calls- Embrace the Transformative Power of RestGPT" />
+    <published>2023-12-26T09:08:37+05:30</published>
   
-    <updated>2023-12-17T09:22:59+05:30</updated>
+    <updated>2023-12-26T09:08:37+05:30</updated>
   
-    <id>http://localhost:4000/posts/Revolutionize-Software-Development-with-Meta-GPT-Embracing-AI-Powered-Efficiency-from-Concept-to-Code/</id>
-    <content src="http://localhost:4000/posts/Revolutionize-Software-Development-with-Meta-GPT-Embracing-AI-Powered-Efficiency-from-Concept-to-Code/" />
+    <id>http://localhost:4000/posts/Revolutionize-REST-API-Calls-Embrace-the-Transformative-Power-of-RestGPT/</id>
+    <content src="http://localhost:4000/posts/Revolutionize-REST-API-Calls-Embrace-the-Transformative-Power-of-RestGPT/" />
     <author>
       <name>ajaysi</name>
     </author>
 
   
     
-    <category term="None" />
+    <category term="Artificial Intelligence" />
+    
+    <category term="Software Development" />
     
   
 
@@ -84,51 +87,11 @@ In the ever-evolving realm of artificial intelligence, Google’s recent unveili
 
 
 
-      Unleashing the Power of Meta GPT in Software Development: A Revolutionary Approach 🚀
-
-The Dawn of a New Era in Software Engineering 🌅
-
-Welcome to an exhilarating new chapter in the narrative of software development, where the integration of Artificial Intelligence reshapes our approach to creating robust software solutions. In this article, we delve into the realm of Meta GPT, a multi-agent fra...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Optimus Gen-2 Unveiled- Experience Tesla's Humanoid Robotics Breakthrough</title>
-    <link href="http://localhost:4000/posts/Optimus-Gen-2-Unveiled-Experience-Teslas-Humanoid-Robotics-Breakthrough/" rel="alternate" type="text/html" title="Optimus Gen-2 Unveiled- Experience Tesla&amp;apos;s Humanoid Robotics Breakthrough" />
-    <published>2023-12-16T11:08:03+05:30</published>
-  
-    <updated>2023-12-16T11:08:03+05:30</updated>
-  
-    <id>http://localhost:4000/posts/Optimus-Gen-2-Unveiled-Experience-Teslas-Humanoid-Robotics-Breakthrough/</id>
-    <content src="http://localhost:4000/posts/Optimus-Gen-2-Unveiled-Experience-Teslas-Humanoid-Robotics-Breakthrough/" />
-    <author>
-      <name>ajaysi</name>
-    </author>
-
-  
-    
-    <category term="Technology" />
-    
-    <category term="Robotics" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Tesla’s Optimus Gen-2: The Dawn of Advanced Humanoid Robotics 🤖
+      Embracing Efficiency with RestGPT: The Next Leap in API Call Automation 🚀
 
 Introduction
 
-The unveiling of Tesla’s Optimus Gen-2 robot marks a defining moment in the evolution of robotics. Merging the technical intricacies outlined in a comprehensive research report with the palpable excitement from the tech community, this article delves into the breakthroughs and implications of Tesla’s humanoid marvel....
+In the ever-evolving realm of large language models (LLMs), the quest for efficiency and specificity in API call automation has led to the development of various models, each with its unique strengths. Today, we spotlight RestGPT—a framework designed to revolutionize the integration of LLMs with real-world ...
     </summary>
   
 
@@ -136,23 +99,23 @@ The unveiling of Tesla’s Optimus Gen-2 robot marks a defining moment in the ev
 
   
   <entry>
-    <title>Navigating the Future- Unveiling GPT-4.5, Google Gemini &amp; AI's Evolution</title>
-    <link href="http://localhost:4000/posts/Navigating-the-Future-Unveiling-GPT-45-Google-Gemini-AIs-Evolution/" rel="alternate" type="text/html" title="Navigating the Future- Unveiling GPT-4.5, Google Gemini &amp;amp; AI&amp;apos;s Evolution" />
-    <published>2023-12-16T11:02:02+05:30</published>
+    <title>Unlock YouTube Success- Unleash the Power of Taja AI for Enhanced Visibility, Engagement, and Growth</title>
+    <link href="http://localhost:4000/posts/Unlock-YouTube-Success-Unleash-the-Power-of-Taja-AI-for-Enhanced-Visibility-Engagement-and-Growth/" rel="alternate" type="text/html" title="Unlock YouTube Success- Unleash the Power of Taja AI for Enhanced Visibility, Engagement, and Growth" />
+    <published>2023-12-26T09:02:36+05:30</published>
   
-    <updated>2023-12-16T11:02:02+05:30</updated>
+    <updated>2023-12-26T09:02:36+05:30</updated>
   
-    <id>http://localhost:4000/posts/Navigating-the-Future-Unveiling-GPT-45-Google-Gemini-AIs-Evolution/</id>
-    <content src="http://localhost:4000/posts/Navigating-the-Future-Unveiling-GPT-45-Google-Gemini-AIs-Evolution/" />
+    <id>http://localhost:4000/posts/Unlock-YouTube-Success-Unleash-the-Power-of-Taja-AI-for-Enhanced-Visibility-Engagement-and-Growth/</id>
+    <content src="http://localhost:4000/posts/Unlock-YouTube-Success-Unleash-the-Power-of-Taja-AI-for-Enhanced-Visibility-Engagement-and-Growth/" />
     <author>
       <name>ajaysi</name>
     </author>
 
   
     
-    <category term="Artificial Intelligence" />
+    <category term="YouTube Marketing" />
     
-    <category term="Technology Trends" />
+    <category term="Content Creation" />
     
   
 
@@ -164,9 +127,9 @@ The unveiling of Tesla’s Optimus Gen-2 robot marks a defining moment in the ev
 
 
 
-      The Dawn of AI’s Next Frontier: GPT 4.5 Speculations and the Race for AI Dominance 🌅
+      Elevate Your YouTube Presence with Taja AI: The Ultimate Content Enhancement Tool
 
-The landscape of artificial intelligence (AI) is continually evolving, with every passing day ushering in breakthroughs that redefine our technological boundaries. As we transition into the chillier seasons, our tech horizons are heating up with potential advancements and newsworthy developments that promise t...
+The world of YouTube content creation is more competitive than ever. Engaging your audience and making your videos discoverable amidst millions of creators can be a daunting challenge. Taja AI emerges as the key ally in this battle, a cutting-edge tool that infuses artificial intelligence into the art of video op...
     </summary>
   
 
@@ -174,23 +137,23 @@ The landscape of artificial intelligence (AI) is continually evolving, with ever
 
   
   <entry>
-    <title>Revolutionize Your Data Analysis with RoboVis- The Future of AI-Assisted Research</title>
-    <link href="http://localhost:4000/posts/Revolutionize-Your-Data-Analysis-with-RoboVis-The-Future-of-AI-Assisted-Research/" rel="alternate" type="text/html" title="Revolutionize Your Data Analysis with RoboVis- The Future of AI-Assisted Research" />
-    <published>2023-12-16T10:39:58+05:30</published>
+    <title>AI-Driven Cinema- Google and Runway's Clash in Shaping the Future of Filmmaking</title>
+    <link href="http://localhost:4000/posts/AI-Driven-Cinema-Google-and-Runways-Clash-in-Shaping-the-Future-of-Filmmaking/" rel="alternate" type="text/html" title="AI-Driven Cinema- Google and Runway&amp;apos;s Clash in Shaping the Future of Filmmaking" />
+    <published>2023-12-26T08:57:45+05:30</published>
   
-    <updated>2023-12-16T10:39:58+05:30</updated>
+    <updated>2023-12-26T08:57:45+05:30</updated>
   
-    <id>http://localhost:4000/posts/Revolutionize-Your-Data-Analysis-with-RoboVis-The-Future-of-AI-Assisted-Research/</id>
-    <content src="http://localhost:4000/posts/Revolutionize-Your-Data-Analysis-with-RoboVis-The-Future-of-AI-Assisted-Research/" />
+    <id>http://localhost:4000/posts/AI-Driven-Cinema-Google-and-Runways-Clash-in-Shaping-the-Future-of-Filmmaking/</id>
+    <content src="http://localhost:4000/posts/AI-Driven-Cinema-Google-and-Runways-Clash-in-Shaping-the-Future-of-Filmmaking/" />
     <author>
       <name>ajaysi</name>
     </author>
 
   
     
-    <category term="Artificial Intelligence" />
+    <category term="Artificial Intelligence (AI)" />
     
-    <category term="Research &amp; Development" />
+    <category term="Filmmaking" />
     
   
 
@@ -202,9 +165,47 @@ The landscape of artificial intelligence (AI) is continually evolving, with ever
 
 
 
-      Revolutionize Your Research with RoboVis: The Ultimate Open-Source AI Research Assistant 🤖
+      Google’s AI Dominance in the Realm of Video Generation 🎥
 
-Welcome to a new horizon in the digital landscape where AI research assistants like RoboVis are not just transforming but revolutionizing the way we interact with the limitless information on the internet. Imagine a tool that works tirelessly, 24/7, to gather, analyze, and present data from the vast expa...
+The digital era has ushered in groundbreaking technologies that revolutionize how we create and consume media. Among the latest advancements, artificial intelligence (AI) stands out as a transformative force in video generation. In an industry where innovation is the cornerstone of success, Google’s AI Video Generator has captured the sp...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Unleash Your Creativity with Amphion- The Revolutionary AI Text-to-Speech Toolkit</title>
+    <link href="http://localhost:4000/posts/Unleash-Your-Creativity-with-Amphion-The-Revolutionary-AI-Text-to-Speech-Toolkit/" rel="alternate" type="text/html" title="Unleash Your Creativity with Amphion- The Revolutionary AI Text-to-Speech Toolkit" />
+    <published>2023-12-26T08:50:03+05:30</published>
+  
+    <updated>2023-12-26T08:50:03+05:30</updated>
+  
+    <id>http://localhost:4000/posts/Unleash-Your-Creativity-with-Amphion-The-Revolutionary-AI-Text-to-Speech-Toolkit/</id>
+    <content src="http://localhost:4000/posts/Unleash-Your-Creativity-with-Amphion-The-Revolutionary-AI-Text-to-Speech-Toolkit/" />
+    <author>
+      <name>ajaysi</name>
+    </author>
+
+  
+    
+    <category term="AI and Machine Learning" />
+    
+    <category term="Audio Production" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Exploring Amphion: The Future of Open-Source AI Text-to-Speech Technology 🚀
+
+In the ever-evolving world of digital audio, Amphion stands out as a groundbreaking open-source AI Text-to-Speech (TTS) toolkit that is transforming how we generate and interact with sound. This comprehensive exploration dives into Amphion’s capabilities and how it is changing the landscape for researchers, sound engin...
     </summary>
   
 
