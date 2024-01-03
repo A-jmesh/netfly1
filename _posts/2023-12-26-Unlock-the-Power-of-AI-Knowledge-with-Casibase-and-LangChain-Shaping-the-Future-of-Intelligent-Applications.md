@@ -1,16 +1,14 @@
-                        ---
-                        title: Unlock the Power of AI Knowledge with Casibase and LangChain- Shaping the Future of Intelligent Applications
-                        date: 2023-12-26 08:44:06 +0530
-                        categories: [Artificial Intelligence, Natural Language Processing]
-                        tags: [AI Knowledge Databases, Natural Language Processing]
-                        description: **Explore Casibase and LangChain- Unveiling the Future of AI Knowledge Databases and Applications**
-
-Discover how Casibase and LangChain empower developers and organizations to harness the power of AI, enabling the creation of sophisticated, language model-based applications.
-                        img_path: '/assets/'
-                        image:
-                            path: generated_image_2023-12-26-08-42-55.webp
-                            alt: Unlock the Power of AI Knowledge with Casibase and LangChain- Shaping the Future of Intelligent Applications
-                        ---
+---
+title: Unlock the Power of AI Knowledge with Casibase and LangChain- Shaping the Future of Intelligent Applications
+date: 2023-12-26 08:44:06 +0530
+categories: [Artificial Intelligence, Natural Language Processing]
+tags: [AI Knowledge Databases]
+description: Explore Casibase and LangChain- Unveiling the Future of AI Knowledge Databases and Applications. Discover how Casibase and LangChain empower developers and organizations to harness the power of AI, enabling the creation of sophisticated, language model-based applications.
+img_path: '/assets/'
+image:
+    path: generated_image_2023-12-26-08-42-55.webp
+    alt: Unlock the Power of AI Knowledge with Casibase and LangChain- Shaping the Future of Intelligent Applications
+---
 
 # Casibase and LangChain: Pioneering the Future of AI Knowledge Databases 🚀
 
